@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav1{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#lin{
+    color: orange;
+    text-decoration: none;
+    margin-left: 20px;
+}
+a{
+    margin-right: 240px;
+    height: 200px;
+}
