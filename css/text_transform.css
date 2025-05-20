@@ -1,0 +1,12 @@
+#o{
+    text-transform:none;
+}
+#t{
+    text-transform: uppercase;
+}
+#th{
+    text-transform: lowercase;
+}
+#fo{
+    text-transform: capitalize;
+}
