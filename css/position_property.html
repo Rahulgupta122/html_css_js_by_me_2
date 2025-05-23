@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        #outer{
+            height: 700px;
+            width: 1200px;
+            border: 2px solid violet;
+            margin: 34px;
+            padding: 43px;
+            position: relative;
+            
+        }
+        .box{
+            border: 2px solid black;
+            height: 1400px;
+            width: 1100px;
+
+        }
+       
+        #box3{
+            position: fixed;
+            top: 10px;
+            left: 30px;
+        }
+        
+    </Style>
+</head>
+<body>
+    <div id="outer">
+        <div class="box" style="background-color: aqua;" id="box0"></div>
+        <div class="box" id="box1" style="background-color: blue;"></div>
+        <div class="box" id="box3" style="background-color: brown;"></div>
+        <div class="box" style="background-color: blueviolet;"></div>
+       
+    </div>
+</body>
+</html>
