@@ -1,0 +1,19 @@
+     *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: steps(7);
+            transition-delay: 3s;
+            
+        }
+         div:hover{
+            background-color: brown;
+            font-size: 100px;
+        }
+        
