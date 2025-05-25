@@ -1,0 +1,43 @@
+p{
+    text-transform:none ;
+}
+div{
+    height: 100px;
+    width: 100px;
+    /* background-color: aquamarine;
+    margin: 30px;
+    padding: 30px;
+    display: inline-block; */
+    margin: 20px;
+    display: inline-block;
+    
+    
+    
+}
+#pa{
+    background-color: blueviolet;
+     
+
+
+}
+#chi{
+    background-color: cadetblue;
+    font-size: 2rem;
+}
+/* #box2{
+    visibility: hidden;
+} */
+p{
+    background-color: blue;
+    display: inline;
+}
+#out{
+    height: 500px;
+    width: 800px;
+    border: 2px solid violet;
+    margin:63px;
+    padding: 43px;
+}
+#box1{
+    top: 100px;
+}
