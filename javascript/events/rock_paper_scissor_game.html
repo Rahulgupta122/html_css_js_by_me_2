@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 80px;
+            width: 100%;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-size: cover;
+          
+
+        }
+        #rock:hover{
+            background-color: gray;
+        }
+        #paper:hover{
+            background-color: gray;
+        }
+        #scissor:hover{
+            background-color: gray;
+        }
+        #jo{
+            display: flex;
+              justify-content: center;
+              gap: 20px;
+              margin-top: 30px;
+        }
+        .score-board{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        gap: 20px;        }
+        #user-score,#com-score{
+            font-size: 4rem;
+        }
+        .msg-container{
+           margin-top: 30px;
+            text-align: center;
+        }
+        #msg{
+            font-size: 2rem;
+            background-color: black;
+            color: white;
+            display: inline;
+            border-radius: 5px;
+            padding: 25px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>welcome to RR games</h1>
+    <div id="jo">
+        <div class="im" id="rock"><img src="image.png" alt="na"></div>
+        <div class="im" id="paper"><img src="Screenshot 2025-06-01 165231.png" alt="na"></div>
+        <div class="im" id="scissor"><img src="Screenshot 2025-06-01 165338.png" alt="na"></div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>you</p>
+        </div>
+        <div class="score">
+            <p id="com-score">
+                0
+            </p>
+            <p>computer</p>
+        </div>
+        
+    </div>
+    <div class="msg-container">
+            <p id="msg">play your move</p>
+        </div>
+    <script src="rock_paper_scissor_game.js"></script>
+</body>
+</html>
