@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
+ *{
             margin: 0;
             padding: 0;
 
@@ -62,32 +55,3 @@
             padding: 25px;
             
         }
-
-    </style>
-</head>
-<body>
-    <h1>welcome to RR games</h1>
-    <div id="jo">
-        <div class="im" id="rock"><img src="image.png" alt="na"></div>
-        <div class="im" id="paper"><img src="Screenshot 2025-06-01 165231.png" alt="na"></div>
-        <div class="im" id="scissor"><img src="Screenshot 2025-06-01 165338.png" alt="na"></div>
-    </div>
-    <div class="score-board">
-        <div class="score">
-            <p id="user-score">0</p>
-            <p>you</p>
-        </div>
-        <div class="score">
-            <p id="com-score">
-                0
-            </p>
-            <p>computer</p>
-        </div>
-        
-    </div>
-    <div class="msg-container">
-            <p id="msg">play your move</p>
-        </div>
-    <script src="rock_paper_scissor_game.js"></script>
-</body>
-</html>
