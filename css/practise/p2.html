@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        margin: 20px;
+        display: inline-block;
+        background-color: lightskyblue;
+    }
+    #a{
+        position: static;
+        top: 20px;
+    }
+    #b{
+        position: relative;
+        top: 20px;
+    }
+    #c{
+        position: absolute;
+        top: 30px;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="box" id="a">1</div>
+    <div class="box" id="b">2</div>
+    <div class="box" id="c">3</div>
+    <div class="box" id="d">4</div>
+</body>
+</html>
