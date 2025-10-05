@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Selector</title>
+<style>
+    #outer{
+        border: 2px solid black;
+        display: flex;
+        justify-content:center;
+        justify-content: space-between;
+       
+
+    }
+    img{
+        margin-left: 30px;
+    }
+    #sho{
+        height: 400px;
+        width: 400px;
+        border: 2px solid black;
+        background-size: cover;
+    }
+</style>
+</head>
+<body>
+
+<div id="outer">
+    <img id="img-cherry" src="Screenshot 2025-09-28 000635.png" alt="cherry">
+    <img id="img-apple" src="Screenshot 2025-09-28 000705.png" alt="apple">
+    <img id="img-banana" src="Screenshot 2025-09-28 000721.png" alt="banana">
+    
+</div>
+<ol type='A'>
+    <li>h</li>
+    <li>e</li>
+</ol>
+
+
+<div id="sho"></div>
+
+
+
+
+<script>
+    let show=document.querySelector("#sho");
+    let cherryy=document.querySelector("#img-cherry");
+    let apple=document.querySelector("#img-apple");
+    let banana=document.querySelector("#img-banana");
+
+    function shi(imgele){
+        show.style.display="block";
+        show.style.backgroundImage=`url(${imgele.src})`;
+        show.style.backgroundSize="cover";
+    }
+
+    cherryy.addEventListener("click",()=>{
+        shi(cherryy);
+
+    })
+    apple.addEventListener("click",()=>{
+        shi(apple);
+    })
+    banana.addEventListener("click",()=>{
+        shi(banana);
+    });
+
+</script>
+
+
+</body>
+</html>

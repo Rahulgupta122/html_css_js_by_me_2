@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"> click me</button>
+    <p id="pa">0</p>
+    <script>
+        let a=document.querySelector("#btn");
+        let b=document.querySelector("#pa");
+        let coun=0;
+        a.addEventListener("click",()=>{
+            coun++;
+            b.innerText=coun;
+
+        })
+    </script>
+</body>
+</html>

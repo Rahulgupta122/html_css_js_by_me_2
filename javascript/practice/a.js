@@ -1,4 +1,4 @@
-let b=document.createElement("p");
-b.innerText="Hello meloni"
-let a=document.querySelector("body");
-console.log(a.prepend(b));
+let a=document.createElement("p");
+a.innerText="Hello Rahul"
+let b=document.querySelector("div");
+b.before(a)

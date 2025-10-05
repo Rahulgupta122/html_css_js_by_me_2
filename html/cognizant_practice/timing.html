@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="contact">
+        <label>Name</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+        <br><br>
+        <p id="error" style="color:red"></p>
+        <br>
+
+        <button id="submit">Submit</button>
+</form>
+<script>
+    const f= document.getElementById('contact');
+    const n= document.getElementById('name');
+    const e= document.getElementById('email');
+    const err= document.getElementById('error');
+
+    f.addEventListener('submit',function(a){
+        a.preventDefault();
+
+        const namevalue= n.value.trim();
+        const emailvalue=e.value.trim();
+
+        const epattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if(namevalue.length<2){
+            err.textContent="Error: letter must be of atlease 2 character";
+            err.className= "error";
+        }else if(!epattern.test(emailvalue)){
+            err.textContent="error: enter valid email";
+            // err.className="error";
+        }else{
+            err.textContent="Success:form submitted successfully";
+            // err.className="success";
+            f.reset();
+        }
+
+    });
+</script>
+
+</body>
+</html>
